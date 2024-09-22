@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef6482a5-c1fe-49a2-9a19-667a9b0ed1c3" name="Changes" comment="Inicio curso 2 JAVA ALURA">
-      <change afterPath="$PROJECT_DIR$/src/pelicula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/principal.java" afterDir="false" />
+    <list default="true" id="ef6482a5-c1fe-49a2-9a19-667a9b0ed1c3" name="Changes" comment="Clase pelicula curso 3 java">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/modelosAplicacion/serie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/modelosAplicacion/titulo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/modelosAplicacion/pelicula.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,21 +27,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Jeo98"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Jeo98&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Jeo98/screenmatch-Curso2-Java-ALURA.git",
-    "accountId": "b46efafa-62e5-4d4b-9eb5-a63caa4dbed0"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Jeo98/screenmatch-Curso2-Java-ALURA.git&quot;,
+    &quot;accountId&quot;: &quot;b46efafa-62e5-4d4b-9eb5-a63caa4dbed0&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2mNjIOARRrKKyt8MW3T4eLsQGh2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -52,6 +54,7 @@
   "keyToString": {
     "Application.principal.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true"
   }
@@ -87,11 +90,20 @@
       <option name="project" value="LOCAL" />
       <updated>1726924004791</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Clase pelicula curso 3 java">
+      <option name="closed" value="true" />
+      <created>1726950316072</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726950316072</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Inicio curso 2 JAVA ALURA" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inicio curso 2 JAVA ALURA" />
+    <MESSAGE value="Clase pelicula curso 3 java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clase pelicula curso 3 java" />
   </component>
 </project>
