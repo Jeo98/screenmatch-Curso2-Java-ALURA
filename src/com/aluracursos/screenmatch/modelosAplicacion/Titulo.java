@@ -1,6 +1,6 @@
 package com.aluracursos.screenmatch.modelosAplicacion;
 
-public class titulo {
+public class Titulo {
 
     //defino los atributos que pertenecen a una com.aluracursos.screenmatch.modelosAplicacion.pelicula
     private String nombre;
