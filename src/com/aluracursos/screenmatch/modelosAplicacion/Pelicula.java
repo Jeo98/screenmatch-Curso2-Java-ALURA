@@ -18,4 +18,11 @@ public class Pelicula extends Titulo implements Clasificacion {
     public int getClasificacion() {
         return (int) (calculaMedia()); //casteo explicito
     }
+
+    @Override
+    public String toString() {
+        return "Pelicula{" +
+                "director='" + director + '\'' +
+                '}';
+    }
 }

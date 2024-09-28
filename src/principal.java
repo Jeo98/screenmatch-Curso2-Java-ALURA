@@ -64,6 +64,9 @@ public class principal {
         System.out.println(ListaDePeliculas.get(0).getNombrePelicula());
         System.out.println(ListaDePeliculas.get(1));
 
+        System.out.println(ListaDePeliculas);
+        System.out.println(ListaDePeliculas.get(0));
+
 
     }
 }

@@ -17,6 +17,18 @@ public class Titulo {
 
     }
 
+    @Override
+    public String toString() {
+        return "Titulo{" +
+                "nombre='" + nombre + '\'' +
+                ", fechadelanzamiento=" + fechadelanzamiento +
+                ", duracionEnMinutos=" + duracionEnMinutos +
+                ", includiaEnPlan=" + includiaEnPlan +
+                ", sumaEvaluaciones=" + sumaEvaluaciones +
+                ", cantidadEvaluaciones=" + cantidadEvaluaciones +
+                '}';
+    }
+
     public void evalua(double nota ){
         cantidadEvaluaciones ++;
         sumaEvaluaciones += nota; // acumula cada calificacion que da cada usuario

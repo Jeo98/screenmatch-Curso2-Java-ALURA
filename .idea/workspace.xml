@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef6482a5-c1fe-49a2-9a19-667a9b0ed1c3" name="Changes" comment="herencia, INTERFACES | clase 4 curso java alura">
+    <list default="true" id="ef6482a5-c1fe-49a2-9a19-667a9b0ed1c3" name="Changes" comment="CURSO LISTAS JAVA">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/modelosAplicacion/Pelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/modelosAplicacion/Pelicula.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/modelosAplicacion/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/modelosAplicacion/Titulo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,12 +31,12 @@
     &quot;assignee&quot;: &quot;Jeo98&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Jeo98/screenmatch-Curso2-Java-ALURA.git&quot;,
-    &quot;accountId&quot;: &quot;b46efafa-62e5-4d4b-9eb5-a63caa4dbed0&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Jeo98/screenmatch-Curso2-Java-ALURA.git",
+    "accountId": "7ef66682-e2a4-4f67-b630-ef4189b9ec36"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -102,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727041870138</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="CURSO LISTAS JAVA">
+      <option name="closed" value="true" />
+      <created>1727490250509</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727490250509</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -110,6 +120,7 @@
     <MESSAGE value="Clase pelicula curso 3 java" />
     <MESSAGE value="Clase pelicula, titulo, serie | herencia y encapsulamiento | clase 3 curso java alura" />
     <MESSAGE value="herencia, INTERFACES | clase 4 curso java alura" />
-    <option name="LAST_COMMIT_MESSAGE" value="herencia, INTERFACES | clase 4 curso java alura" />
+    <MESSAGE value="CURSO LISTAS JAVA" />
+    <option name="LAST_COMMIT_MESSAGE" value="CURSO LISTAS JAVA" />
   </component>
 </project>
