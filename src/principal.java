@@ -1,6 +1,8 @@
 import com.aluracursos.screenmatch.calculos.CalculadoraDeTiempo;
 import com.aluracursos.screenmatch.modelosAplicacion.*;
 
+import java.util.ArrayList;
+
 public class principal {
 
     public static void main(String[] args) {
@@ -46,8 +48,22 @@ public class principal {
 
         calculadora.incluye(otraPeli);
 
-
-
         System.out.println(calculadora.getTiempototal());
+
+        Pelicula PeliculaDeJuan = new Pelicula();
+        PeliculaDeJuan.setNombre("Toy Story");
+        PeliculaDeJuan.setFechadelanzamiento(1998);
+        PeliculaDeJuan.setDuracionEnMinutos(180);
+
+        ArrayList<Pelicula> ListaDePeliculas = new ArrayList<>(); // creo la lista de peliculas, tipo arraylist
+        ListaDePeliculas.add(PeliculaDeJuan);
+        ListaDePeliculas.add(peli1);
+        ListaDePeliculas.add(otraPeli);
+
+        System.out.println(ListaDePeliculas.size());
+        System.out.println(ListaDePeliculas.get(0).getNombrePelicula());
+        System.out.println(ListaDePeliculas.get(1));
+
+
     }
 }

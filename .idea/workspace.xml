@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef6482a5-c1fe-49a2-9a19-667a9b0ed1c3" name="Changes" comment="herencia, INTERFACES | clase 4 curso java alura">
-      <change afterPath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/calculos/CalculadoraDeTiempo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/calculos/Clasificacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/calculos/FiltroRecomendaciones.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/modelosAplicacion/Episodio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/modelosAplicacion/pelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/modelosAplicacion/Pelicula.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/modelosAplicacion/serie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/modelosAplicacion/Serie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/modelosAplicacion/titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/aluracursos/screenmatch/modelosAplicacion/Titulo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/principal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
