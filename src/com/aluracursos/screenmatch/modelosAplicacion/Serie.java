@@ -7,7 +7,14 @@ public class Serie extends Titulo {
     private int minutosporEpisodio;
 
 
-   public int getDuracionEnMinutos(){
+    public Serie(int temporada, int episodiosPortemportada, int minutosporEpisodio, String nombre, int fechadelanzamiento, int duracion) {//CONSTRUCTOR
+        super(nombre,fechadelanzamiento,duracion);
+        this.temporada = temporada;
+        this.episodiosPortemportada = episodiosPortemportada;
+        this.minutosporEpisodio = minutosporEpisodio;
+    }
+
+    public int getDuracionEnMinutos(){
 
        return temporada * episodiosPortemportada * minutosporEpisodio;
    }

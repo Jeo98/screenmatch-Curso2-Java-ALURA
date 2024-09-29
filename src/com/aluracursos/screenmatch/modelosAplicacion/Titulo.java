@@ -9,6 +9,16 @@ public class Titulo {
     private double sumaEvaluaciones=0.0;
     private int cantidadEvaluaciones=0; //total de evaluaciones
 
+    public Titulo(String nombre, int fechadelanzamiento, int duracionEnMinutos) {//CONSTRUCTOR
+        this.nombre = nombre;
+        this.fechadelanzamiento = fechadelanzamiento;
+        this.duracionEnMinutos = duracionEnMinutos;
+    }
+
+    public Titulo() {
+
+    }
+
     public void muestrafichatecnica(){
 
         System.out.println("Pelicula : " + this.getNombrePelicula());

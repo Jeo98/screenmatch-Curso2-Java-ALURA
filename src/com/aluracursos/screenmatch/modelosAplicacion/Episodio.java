@@ -4,27 +4,39 @@ import com.aluracursos.screenmatch.calculos.Clasificacion;
 
 public class Episodio implements Clasificacion {
 
-    private int numeroEpisodio;
-    private String nombreEpisodio;
+    private int numero;
+    private String nombre;
     private Serie serie;
     private int totalVisualizaciones;
 
-
-
-    public int getNumeroEpisodio() {
-        return numeroEpisodio;
+    public Episodio(String nombre, Serie serie, int numero) {//CONSTRUCTOR
+        this.nombre = nombre;
+        this.serie = serie;
+        this.numero = numero;
     }
 
-    public void setNumeroEpisodio(int numeroEpisodio) {
-        this.numeroEpisodio = numeroEpisodio;
+    public int getTotalVisualizaciones() {
+        return totalVisualizaciones;
     }
 
-    public String getNombreEpisodio() {
-        return nombreEpisodio;
+    public void setTotalVisualizaciones(int totalVisualizaciones) {
+        this.totalVisualizaciones = totalVisualizaciones;
     }
 
-    public void setNombreEpisodio(String nombreEpisodio) {
-        this.nombreEpisodio = nombreEpisodio;
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public Serie getSerie() {
@@ -35,12 +47,12 @@ public class Episodio implements Clasificacion {
         this.serie = serie;
     }
 
-
     @Override
     public int getClasificacion() {
-        if(this.totalVisualizaciones > 100)
-            return 4 ;
-        else
+        if (totalVisualizaciones > 100) {
+            return 4;
+        } else {
             return 2;
+        }
     }
 }
