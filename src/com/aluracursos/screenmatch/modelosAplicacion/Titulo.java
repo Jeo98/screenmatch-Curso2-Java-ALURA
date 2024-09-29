@@ -1,6 +1,6 @@
 package com.aluracursos.screenmatch.modelosAplicacion;
 
-public class Titulo {
+public class Titulo implements Comparable<Titulo>{
 
     //defino los atributos que pertenecen a una com.aluracursos.screenmatch.modelosAplicacion.pelicula
     private String nombre;
@@ -107,4 +107,11 @@ public class Titulo {
     }
 
 
+    @Override
+    public int compareTo(Titulo otroTitulo) { //utilizo el metodo para comparar titulos
+
+
+        return this.getNombrePelicula().compareTo(otroTitulo.getNombrePelicula());
+        //retorna negativo si this es menor que otro titulo, 0 si son iguales y 1 si this es mayor a otroTitulo
+    }
 }

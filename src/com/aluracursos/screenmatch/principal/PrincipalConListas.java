@@ -20,9 +20,10 @@ public class PrincipalConListas {
         serie1.evalua(10);
 
         ArrayList<Titulo> lista = new ArrayList<>(); // creo la lista de peliculas, tipo arraylist
+        lista.add(otraPeli);
         lista.add(PeliculaDeJuan);
         lista.add(peli1);
-        lista.add(otraPeli);
+
         lista.add(serie1);
 
         for (Titulo item:lista){ //foreach, no sale como referencia de intellij, CONSULTAR
@@ -33,6 +34,26 @@ public class PrincipalConListas {
                 System.out.println(pelinueva.getClasificacion());//realizo el casteo directo al metodo
             }
         }
+
+        ArrayList<String> listaDeArtistas = new ArrayList<>();
+
+        listaDeArtistas.add("xaxa");
+        listaDeArtistas.add("chinchen");
+        listaDeArtistas.add("merengue olivera");
+        listaDeArtistas.add("Arquimedes");
+
+        System.out.println("Lista no ordenada: " + listaDeArtistas);
+
+        Collections.sort(listaDeArtistas);
+
+        System.out.println("Lista ordenada:  " + listaDeArtistas);
+
+        //Ahora quiero ordenar la lista de Titulo
+        Collections.sort(lista);
+        System.out.println(lista);
+        // esta clase no tiene el metodo que compara y que utiliza sort para comparar
+
+
 
 
 
