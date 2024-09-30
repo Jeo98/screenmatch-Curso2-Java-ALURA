@@ -46,7 +46,6 @@ public class Serie extends Titulo {
 
     @Override
     public String toString() {
-        return (super.toString() + "Temporada: \n" + this.temporada + "Episodios por temporada: \n" + this.episodiosPortemportada +
-                "Minutos por episodio: " + this.minutosporEpisodio);
+        return ("Nombre serie: " + super.getNombrePelicula() + ",Fecha lanzamiento: " + super.getFechadelanzamiento());
     }
 }

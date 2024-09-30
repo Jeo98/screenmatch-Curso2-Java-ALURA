@@ -6,6 +6,7 @@ import com.aluracursos.screenmatch.modelosAplicacion.*;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class PrincipalConListas {
     public static void main(String[] args) {
@@ -19,20 +20,20 @@ public class PrincipalConListas {
         PeliculaDeJuan.evalua(4);
         serie1.evalua(10);
 
+
         ArrayList<Titulo> lista = new ArrayList<>(); // creo la lista de peliculas, tipo arraylist
         lista.add(otraPeli);
         lista.add(PeliculaDeJuan);
         lista.add(peli1);
-
         lista.add(serie1);
 
         for (Titulo item:lista){ //foreach, no sale como referencia de intellij, CONSULTAR
 
             System.out.println(item.getNombrePelicula());//llama la tostring de ese item siendo cada elemento cargado en la lista
             //Pelicula peliculanueva = (Pelicula) item;
-            if(item instanceof Pelicula pelinueva) { // item es instancia de Pelicula? si => crea pelinueva
+            /*if(item instanceof Pelicula pelinueva) { // item es instancia de Pelicula? si => crea pelinueva
                 System.out.println(pelinueva.getClasificacion());//realizo el casteo directo al metodo
-            }
+            }*/
         }
 
         ArrayList<String> listaDeArtistas = new ArrayList<>();
@@ -50,9 +51,10 @@ public class PrincipalConListas {
 
         //Ahora quiero ordenar la lista de Titulo
         Collections.sort(lista);
-        System.out.println(lista);
+        System.out.println("Lista ordenada por nombre:" + lista);
         // esta clase no tiene el metodo que compara y que utiliza sort para comparar
-
+        lista.sort(Comparator.comparing(Titulo::getFechadelanzamiento));//ordena la lista por fecha de lanzamiento de menor a mayor
+        System.out.println("Lista ordenada por fecha lanzamiento: " + lista);
 
 
 

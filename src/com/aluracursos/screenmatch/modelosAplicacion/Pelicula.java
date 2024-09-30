@@ -32,8 +32,6 @@ public class Pelicula extends Titulo implements Clasificacion {
 
     @Override
     public String toString() {
-        return "Pelicula{" +
-                "director='" + director + '\'' +
-                '}';
+        return "Nombre: " + super.getNombrePelicula() + ", lanzamiento: " + super.getFechadelanzamiento();
     }
 }
