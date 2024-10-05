@@ -1,10 +1,17 @@
 package com.aluracursos.screenmatch.modelosAplicacion;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Titulo implements Comparable<Titulo>{
 
+    @SerializedName("Title") //cada vez que se lea en el json "Title" va a remplazar por nombre.(serializa el nombre)
     //defino los atributos que pertenecen a una com.aluracursos.screenmatch.modelosAplicacion.pelicula
     private String nombre;
-    private int fechadelanzamiento, duracionEnMinutos;
+    @SerializedName("Year")
+    private int fechadelanzamiento;
+
+    private int duracionEnMinutos;
+
     private boolean includiaEnPlan;
     private double sumaEvaluaciones=0.0;
     private int cantidadEvaluaciones=0; //total de evaluaciones
@@ -25,18 +32,6 @@ public class Titulo implements Comparable<Titulo>{
         System.out.println("Duracion : " + this.getDuracionEnMinutos());
         System.out.println("Fecha de lanzamiento : " + this.getFechadelanzamiento());
 
-    }
-
-    @Override
-    public String toString() {
-        return "Titulo{" +
-                "nombre='" + nombre + '\'' +
-                ", fechadelanzamiento=" + fechadelanzamiento +
-                ", duracionEnMinutos=" + duracionEnMinutos +
-                ", includiaEnPlan=" + includiaEnPlan +
-                ", sumaEvaluaciones=" + sumaEvaluaciones +
-                ", cantidadEvaluaciones=" + cantidadEvaluaciones +
-                '}';
     }
 
     public void evalua(double nota ){
@@ -106,6 +101,10 @@ public class Titulo implements Comparable<Titulo>{
 
     }
 
+    @Override
+    public String toString() {
+        return "nombre= " + nombre + ", fechadelanzamiento=" + fechadelanzamiento;
+    }
 
     @Override
     public int compareTo(Titulo otroTitulo) { //utilizo el metodo para comparar titulos
