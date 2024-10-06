@@ -9,9 +9,7 @@ public class Titulo implements Comparable<Titulo>{
     private String nombre;
     @SerializedName("Year")
     private int fechadelanzamiento;
-
     private int duracionEnMinutos;
-
     private boolean includiaEnPlan;
     private double sumaEvaluaciones=0.0;
     private int cantidadEvaluaciones=0; //total de evaluaciones
@@ -22,9 +20,19 @@ public class Titulo implements Comparable<Titulo>{
         this.duracionEnMinutos = duracionEnMinutos;
     }
 
+
+    public Titulo(Tituloomdb miTituloomdb) {
+        this.nombre = miTituloomdb.title();
+        this.fechadelanzamiento = Integer.valueOf(miTituloomdb.year()); //aplico casteo
+        this.duracionEnMinutos = Integer.valueOf(miTituloomdb.runtime().substring(0,2));
+        //substring se utiliza para que solamente tome los valores en los casilleros posicion 0 a 2.
+
+    }
+
     public Titulo() {
 
     }
+
 
     public void muestrafichatecnica(){
 
@@ -103,7 +111,7 @@ public class Titulo implements Comparable<Titulo>{
 
     @Override
     public String toString() {
-        return "nombre= " + nombre + ", fechadelanzamiento=" + fechadelanzamiento;
+        return "nombre= " + nombre + ", fechadelanzamiento=" + fechadelanzamiento + ", duracion: "+ duracionEnMinutos;
     }
 
     @Override

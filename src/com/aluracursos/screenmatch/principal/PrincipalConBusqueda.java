@@ -1,7 +1,8 @@
 package com.aluracursos.screenmatch.principal;
-
 import com.aluracursos.screenmatch.modelosAplicacion.*;
+import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import java.io.IOException;
 import java.net.URI;
@@ -18,6 +19,7 @@ public class PrincipalConBusqueda {
         var  nombre=  lectura.nextLine();
         String direccion= ("http://www.omdbapi.com/?t="+nombre+"&apikey=8eb50e5");
 
+        try{
         //debo realizar una peticion a servidor
         HttpClient client = HttpClient.newHttpClient();
         //arquitectura Cliente-Servidor, nosotros somos el cliente que pide info al server
@@ -48,13 +50,25 @@ public class PrincipalConBusqueda {
          */
         HttpResponse<String> response = client
                 .send(request, HttpResponse.BodyHandlers.ofString());
-                //el .send() pide crear una excepcion ya que al estar vinculado con internet existe el caso
-                //en que caiga conexión o algo ocurra, por ello pide el manejo de excepcion (throws IOException, InterruptedException)
+        //el .send() pide crear una excepcion ya que al estar vinculado con internet existe el caso
+        //en que caiga conexión o algo ocurra, por ello pide el manejo de excepcion (throws IOException, InterruptedException)
         String json=response.body();
         System.out.println(json); //printeo el body de lo que obtengo de respuesta
-        Gson gson = new Gson();
-        Titulo miTitulo= gson.fromJson(json, Titulo.class);
-        System.out.println(miTitulo);
+        Gson gson =new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create(); // para no tener problema entre mayusculas y minusculas
+        Tituloomdb miTituloomdb= gson.fromJson(json, Tituloomdb.class);
+        System.out.println(miTituloomdb);
+        //try catch se utiliza para evitar que el programa se rompa en totalidad. Se rompe dentro de bloque try y muere ahi, no pasa a mayores.
+            Titulo miTitulo= new Titulo(miTituloomdb);
+            System.out.println(miTitulo);
+        }catch (Exception e){
+            System.out.println("Ocurrió un error: ");
+            System.out.println(e.getMessage());
+        }
+
+        System.out.println("Fin de programa D: ");
+
+
+
     }//Fin Main
 
 }//FIN CLASS

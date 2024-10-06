@@ -16,8 +16,8 @@ public class Serie extends Titulo {
 
     public int getDuracionEnMinutos(){
 
-       return temporada * episodiosPortemportada * minutosporEpisodio;
-   }
+        return temporada * episodiosPortemportada * minutosporEpisodio;
+    }
 
     public int getTemporada() {
         return temporada;
