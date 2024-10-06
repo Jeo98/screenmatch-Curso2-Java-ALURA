@@ -1,5 +1,6 @@
 package com.aluracursos.screenmatch.modelosAplicacion;
 
+import com.aluracursos.screenmatch.exception.ErrorEnConversionException;
 import com.google.gson.annotations.SerializedName;
 
 public class Titulo implements Comparable<Titulo>{
@@ -24,6 +25,11 @@ public class Titulo implements Comparable<Titulo>{
     public Titulo(Tituloomdb miTituloomdb) {
         this.nombre = miTituloomdb.title();
         this.fechadelanzamiento = Integer.valueOf(miTituloomdb.year()); //aplico casteo
+        //aqui creo la exception para el caso en que runtime:N/A y evitar que se rompa el programa
+        if(miTituloomdb.runtime().contains("N/A")){
+
+            throw new ErrorEnConversionException("No se logró convetir runtime por contener 'N/A'");
+        }
         this.duracionEnMinutos = Integer.valueOf(miTituloomdb.runtime().substring(0,3).replace(" ",""));
         //substring se utiliza para que solamente tome los valores en los casilleros posicion 0 a 2.
 

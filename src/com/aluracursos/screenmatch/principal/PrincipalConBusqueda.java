@@ -1,9 +1,11 @@
 package com.aluracursos.screenmatch.principal;
+import com.aluracursos.screenmatch.exception.ErrorEnConversionException;
 import com.aluracursos.screenmatch.modelosAplicacion.*;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -57,12 +59,22 @@ public class PrincipalConBusqueda {
         Gson gson =new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create(); // para no tener problema entre mayusculas y minusculas
         Tituloomdb miTituloomdb= gson.fromJson(json, Tituloomdb.class);
         System.out.println(miTituloomdb);
+
+        Titulo miTitulo = new Titulo(miTituloomdb);
+
+            FileWriter escritura = new FileWriter("Peliculas.txt"); //creo el archivo donde voy a escribir
+            escritura.write(miTitulo.toString()); //convierto a string ya que es el parametro esperado por write
+            //NO OLVIDAR CERRAR CONEXION
+            escritura.close(); //cerramos comunicacion para terminar de escribir archivo
+
+
+
         //try catch se utiliza para evitar que el programa se rompa en totalidad. Se rompe dentro de bloque try y muere ahi, no pasa a mayores.
-            Titulo miTitulo= new Titulo(miTituloomdb);
+
             System.out.println(miTitulo);
-        }catch (Exception e){
-            System.out.println("Ocurrió un error: ");
+        }catch (ErrorEnConversionException e){
             System.out.println(e.getMessage());
+
         }
 
         System.out.println("Fin de programa D: ");
