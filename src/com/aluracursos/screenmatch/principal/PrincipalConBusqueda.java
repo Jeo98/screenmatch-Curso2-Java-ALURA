@@ -17,7 +17,7 @@ public class PrincipalConBusqueda {
         Scanner lectura = new Scanner(System.in);
         System.out.println("Ingrese el nombre de la pelicula: ");
         var  nombre=  lectura.nextLine();
-        String direccion= ("http://www.omdbapi.com/?t="+nombre+"&apikey=8eb50e5");
+        String direccion= ("http://www.omdbapi.com/?t="+nombre.replace(" ","+")+"&apikey=8eb50e5");
 
         try{
         //debo realizar una peticion a servidor

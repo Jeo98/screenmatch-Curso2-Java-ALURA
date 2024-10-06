@@ -24,7 +24,7 @@ public class Titulo implements Comparable<Titulo>{
     public Titulo(Tituloomdb miTituloomdb) {
         this.nombre = miTituloomdb.title();
         this.fechadelanzamiento = Integer.valueOf(miTituloomdb.year()); //aplico casteo
-        this.duracionEnMinutos = Integer.valueOf(miTituloomdb.runtime().substring(0,2));
+        this.duracionEnMinutos = Integer.valueOf(miTituloomdb.runtime().substring(0,3).replace(" ",""));
         //substring se utiliza para que solamente tome los valores en los casilleros posicion 0 a 2.
 
     }
